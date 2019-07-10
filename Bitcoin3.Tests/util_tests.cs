@@ -1,9 +1,9 @@
-﻿using NBitcoin.BouncyCastle.Math;
-using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
-using NBitcoin.JsonConverters;
-using NBitcoin.OpenAsset;
-using NBitcoin.RPC;
+﻿using Bitcoin3.BouncyCastle.Math;
+using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.JsonConverters;
+using Bitcoin3.OpenAsset;
+using Bitcoin3.RPC;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Diagnostics;
@@ -15,7 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class util_tests
 	{
@@ -235,17 +235,17 @@ namespace NBitcoin.Tests
 			var segwit = extKey.AsHDScriptPubKey(ScriptPubKeyType.Segwit).ScriptPubKey.GetDestinationAddress(Network.Main);
 			var segwit2 = extKey.ExtKey.AsHDScriptPubKey(ScriptPubKeyType.Segwit).ScriptPubKey.GetDestinationAddress(Network.Main);
 			Assert.Equal(segwit, segwit2);
-			Assert.IsType<NBitcoin.BitcoinWitPubKeyAddress>(segwit);
+			Assert.IsType<Bitcoin3.BitcoinWitPubKeyAddress>(segwit);
 			var segwitP2SH = extKey.AsHDScriptPubKey(ScriptPubKeyType.SegwitP2SH).ScriptPubKey.GetDestinationAddress(Network.Main);
 			var segwit2P2SH = extKey.ExtKey.AsHDScriptPubKey(ScriptPubKeyType.SegwitP2SH).ScriptPubKey.GetDestinationAddress(Network.Main);
 			Assert.Equal(segwitP2SH, segwit2P2SH);
-			Assert.IsType<NBitcoin.BitcoinScriptAddress>(segwitP2SH);
+			Assert.IsType<Bitcoin3.BitcoinScriptAddress>(segwitP2SH);
 			var legacy = extKey.AsHDScriptPubKey(ScriptPubKeyType.Legacy).ScriptPubKey.GetDestinationAddress(Network.Main);
 			var legacy2 = extKey.ExtKey.AsHDScriptPubKey(ScriptPubKeyType.Legacy).ScriptPubKey.GetDestinationAddress(Network.Main);
 			var legacy3 = extKey.Neuter().AsHDScriptPubKey(ScriptPubKeyType.Legacy).ScriptPubKey.GetDestinationAddress(Network.Main);
 			Assert.Equal(legacy, legacy2);
 			Assert.Equal(legacy, legacy3);
-			Assert.IsType<NBitcoin.BitcoinPubKeyAddress>(legacy);
+			Assert.IsType<Bitcoin3.BitcoinPubKeyAddress>(legacy);
 		}
 
 		[Fact]
@@ -352,12 +352,12 @@ namespace NBitcoin.Tests
 		[Trait("UnitTest", "UnitTest")]
 		public void CanDecodeBTrashAddress()
 		{
-			var bcash = NBitcoin.Altcoins.BCash.Instance.Mainnet;
-			BitcoinAddress trashAddress = bcash.Parse<NBitcoin.Altcoins.BCash.BTrashPubKeyAddress>("bitcoincash:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a");
+			var bcash = Bitcoin3.Altcoins.BCash.Instance.Mainnet;
+			BitcoinAddress trashAddress = bcash.Parse<Bitcoin3.Altcoins.BCash.BTrashPubKeyAddress>("bitcoincash:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a");
 			BitcoinAddress trashAddress2 = trashAddress.ScriptPubKey.GetDestinationAddress(bcash);
 			Assert.Equal(trashAddress.ToString(), trashAddress2.ToString());
 
-			trashAddress = bcash.Parse<NBitcoin.Altcoins.BCash.BTrashScriptAddress>("bitcoincash:ppm2qsznhks23z7629mms6s4cwef74vcwvn0h829pq");
+			trashAddress = bcash.Parse<Bitcoin3.Altcoins.BCash.BTrashScriptAddress>("bitcoincash:ppm2qsznhks23z7629mms6s4cwef74vcwvn0h829pq");
 			trashAddress2 = trashAddress.ScriptPubKey.GetDestinationAddress(bcash);
 			Assert.Equal(trashAddress.ToString(), trashAddress2.ToString());
 		}
@@ -871,8 +871,8 @@ namespace NBitcoin.Tests
 			var bytes = Encoding.UTF8.GetBytes(password);
 #pragma warning disable CS0618 // Type or member is obsolete
 #if USEBC || WINDOWS_UWP || NETSTANDARD1X
-			var mac = new NBitcoin.BouncyCastle.Crypto.Macs.HMac(new NBitcoin.BouncyCastle.Crypto.Digests.Sha512Digest());
-			mac.Init(new NBitcoin.BouncyCastle.Crypto.Parameters.KeyParameter(bytes));
+			var mac = new Bitcoin3.BouncyCastle.Crypto.Macs.HMac(new Bitcoin3.BouncyCastle.Crypto.Digests.Sha512Digest());
+			mac.Init(new Bitcoin3.BouncyCastle.Crypto.Parameters.KeyParameter(bytes));
 			var secret = Pbkdf2.ComputeDerivedKey(mac, new byte[0], 1024, 32);
 #else
 			var secret = Pbkdf2.ComputeDerivedKey(new HMACSHA512(bytes), new byte[0], 1024, 32);

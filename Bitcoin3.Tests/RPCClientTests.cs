@@ -1,5 +1,5 @@
-﻿using NBitcoin.DataEncoders;
-using NBitcoin.RPC;
+﻿using Bitcoin3.DataEncoders;
+using Bitcoin3.RPC;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -10,25 +10,25 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using NBitcoin.Logging;
-using NBitcoin.Tests.Helpers;
+using Bitcoin3.Logging;
+using Bitcoin3.Tests.Helpers;
 using Xunit;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 using FsCheck.Xunit;
 using FsCheck;
-using NBitcoin.Tests.Generators;
-using static NBitcoin.Tests.Comparer;
+using Bitcoin3.Tests.Generators;
+using static Bitcoin3.Tests.Comparer;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
-	//Require a rpc server on test network running on default port with -rpcuser=NBitcoin -rpcpassword=NBitcoinPassword
+	//Require a rpc server on test network running on default port with -rpcuser=Bitcoin3 -rpcpassword=Bitcoin3Password
 	//For me : 
-	//"bitcoin-qt.exe" -testnet -server -rpcuser=NBitcoin -rpcpassword=NBitcoinPassword 
+	//"bitcoin-qt.exe" -testnet -server -rpcuser=Bitcoin3 -rpcpassword=Bitcoin3Password 
 	[Trait("RPCClient", "RPCClient")]
 	public class RPCClientTests
 	{
-		const string TestAccount = "NBitcoin.RPCClientTests";
+		const string TestAccount = "Bitcoin3.RPCClientTests";
 
 		public PSBTComparer PSBTComparerInstance { get; }
 		public ITestOutputHelper Output { get; }
@@ -1474,7 +1474,7 @@ namespace NBitcoin.Tests
 
 		// refs: https://github.com/bitcoin/bitcoin/blob/df73c23f5fac031cc9b2ec06a74275db5ea322e3/doc/psbt.md#workflows
 		// with 2 difference.
-		// 1. one user (David) do not use bitcoin core (only NBitcoin)
+		// 1. one user (David) do not use bitcoin core (only Bitcoin3)
 		// 2. 4-of-4 instead of 2-of-3
 		// 3. In version 0.17, `importmulti` can not handle witness script so only p2sh are considered here. TODO: fix
 		[Fact]

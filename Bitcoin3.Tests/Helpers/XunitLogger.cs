@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.Extensions.Logging;
 using Xunit.Abstractions;
 
-namespace NBitcoin.Tests.Helpers
+namespace Bitcoin3.Tests.Helpers
 {
 	public class XunitLogger : ILogger
 	{

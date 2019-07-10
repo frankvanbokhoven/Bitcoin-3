@@ -1,12 +1,12 @@
 using FsCheck;
-using NBitcoin;
-using static NBitcoin.Tests.Generators.CryptoGenerator;
-using static NBitcoin.Tests.Generators.ChainParamsGenerator;
-using static NBitcoin.Tests.Generators.ScriptGenerator;
+using Bitcoin3;
+using static Bitcoin3.Tests.Generators.CryptoGenerator;
+using static Bitcoin3.Tests.Generators.ChainParamsGenerator;
+using static Bitcoin3.Tests.Generators.ScriptGenerator;
 using System.Linq;
 using System;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class AddressGenerator
 	{

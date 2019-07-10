@@ -1,4 +1,4 @@
-﻿using NBitcoin.DataEncoders;
+﻿using Bitcoin3.DataEncoders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class ConverterTests
 	{

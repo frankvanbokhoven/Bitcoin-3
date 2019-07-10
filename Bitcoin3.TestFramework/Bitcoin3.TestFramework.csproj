@@ -5,10 +5,10 @@
 		<TargetFrameworks>netstandard1.6;net452;netstandard2.0</TargetFrameworks>
 		<TargetFrameworks Condition="'$(BuildingInsideVisualStudio)' == 'true'">netstandard2.0</TargetFrameworks>
     <TargetFrameworks Condition="'$(TargetFrameworkOverride)' != ''">$(TargetFrameworkOverride)</TargetFrameworks>
-		<AssemblyName>NBitcoin.TestFramework</AssemblyName>
-		<PackageId>NBitcoin.TestFramework</PackageId>
+		<AssemblyName>Bitcoin3.TestFramework</AssemblyName>
+		<PackageId>Bitcoin3.TestFramework</PackageId>
     <PackageTags>bitcoin,altcoins,bcash,bgold,bitcore,dash,dogecoin,dystem,feathercoin,groestlcoin,litecoin,monacoin,polis,ufo,viacoin,zclassic,liquid</PackageTags>
-    <PackageProjectUrl>https://github.com/MetacoSA/NBitcoin</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/MetacoSA/Bitcoin3</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
 		<PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
@@ -25,7 +25,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
+		<ProjectReference Include="..\Bitcoin3\Bitcoin3.csproj" />
 		<PackageReference Include="System.Net.Http" Version="4.3.3" />
 		<PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
 	</ItemGroup>
@@ -47,6 +47,6 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <Optimize>true</Optimize>
-    <DocumentationFile>bin\Release\NBitcoin.TestFramework.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Bitcoin3.TestFramework.XML</DocumentationFile>
   </PropertyGroup>
 </Project>

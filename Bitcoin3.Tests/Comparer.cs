@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public static class Comparer
 	{

@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FsCheck;
-using NBitcoin;
-using NBitcoin.Tests.Generators;
+using Bitcoin3;
+using Bitcoin3.Tests.Generators;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class LegacyTransactionGenerators
 	{

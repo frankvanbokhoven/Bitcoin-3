@@ -1,7 +1,7 @@
-﻿using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
-using NBitcoin.Protocol;
-using NBitcoin.RPC;
+﻿using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.Protocol;
+using Bitcoin3.RPC;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -18,7 +18,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public enum CoreNodeState
 	{

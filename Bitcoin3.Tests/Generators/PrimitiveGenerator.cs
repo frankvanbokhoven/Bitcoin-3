@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using FsCheck;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class PrimitiveGenerator
 	{

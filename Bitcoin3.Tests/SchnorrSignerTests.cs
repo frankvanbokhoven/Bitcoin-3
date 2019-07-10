@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using NBitcoin.BouncyCastle.Math;
-using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
+using Bitcoin3.BouncyCastle.Math;
+using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	[Trait("UnitTest", "UnitTest")]
 	public class SchnorrSignerTests

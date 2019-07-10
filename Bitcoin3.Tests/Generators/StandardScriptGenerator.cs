@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using FsCheck;
-using NBitcoin;
-namespace NBitcoin.Tests.Generators
+using Bitcoin3;
+namespace Bitcoin3.Tests.Generators
 {
 	public class StandardScriptGenerator
 	{

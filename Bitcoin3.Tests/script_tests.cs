@@ -1,6 +1,6 @@
-﻿using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
-using NBitcoin.Protocol;
+﻿using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.Protocol;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,7 +16,7 @@ using Xunit;
 using Newtonsoft.Json.Linq;
 using System.Runtime.InteropServices;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class script_tests
 	{

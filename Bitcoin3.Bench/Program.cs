@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace NBitcoin.Bench
+namespace Bitcoin3.Bench
 {
 	public class Program
 	{

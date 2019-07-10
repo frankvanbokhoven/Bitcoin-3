@@ -3,13 +3,13 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
 using System;
-using NBitcoin.DataEncoders;
+using Bitcoin3.DataEncoders;
 using System.Collections.Generic;
 using System.Linq;
-using static NBitcoin.Tests.Comparer;
+using static Bitcoin3.Tests.Comparer;
 using Xunit.Abstractions;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class PSBTTests
 	{

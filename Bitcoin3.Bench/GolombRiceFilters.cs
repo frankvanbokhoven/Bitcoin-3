@@ -1,11 +1,11 @@
 using System;
-using NBitcoin;
+using Bitcoin3;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NBitcoin.Bench
+namespace Bitcoin3.Bench
 {
 	[RPlotExporter, RankColumn]
 	public class GolombRiceFilters

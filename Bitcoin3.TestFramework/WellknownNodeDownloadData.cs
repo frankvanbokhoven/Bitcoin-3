@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public partial class NodeDownloadData
 	{

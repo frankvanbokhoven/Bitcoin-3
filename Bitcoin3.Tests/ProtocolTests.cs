@@ -6,21 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-using NBitcoin;
-using NBitcoin.Protocol;
+using Bitcoin3;
+using Bitcoin3.Protocol;
 using System.Net;
 using System.Threading;
 using System.IO;
-using NBitcoin.DataEncoders;
+using Bitcoin3.DataEncoders;
 using System.Net.Sockets;
-using NBitcoin.Protocol.Behaviors;
-using NBitcoin.Logging;
-using NBitcoin.Tests.Helpers;
+using Bitcoin3.Protocol.Behaviors;
+using Bitcoin3.Logging;
+using Bitcoin3.Tests.Helpers;
 using Xunit.Abstractions;
 using Xunit.Sdk;
-using NBitcoin.Protocol.Connectors;
+using Bitcoin3.Protocol.Connectors;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class NodeServerTester : IDisposable
 	{
@@ -126,7 +126,7 @@ namespace NBitcoin.Tests
 
 		#endregion
 
-		public static string NATRuleName = "NBitcoin Tests";
+		public static string NATRuleName = "Bitcoin3 Tests";
 
 		List<IDisposable> _Disposables = new List<IDisposable>();
 		internal void AddDisposable(IDisposable disposable)

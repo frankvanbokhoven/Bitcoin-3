@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using NBitcoin.DataEncoders;
+using Bitcoin3.DataEncoders;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	[Trait("UnitTest", "UnitTest")]
 	public class Bech32Test

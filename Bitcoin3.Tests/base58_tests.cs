@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using NBitcoin.DataEncoders;
+using Bitcoin3.DataEncoders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Xunit;
 using Xunit.Extensions;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	[Trait("Core", "Core")]
 	public class base58_tests

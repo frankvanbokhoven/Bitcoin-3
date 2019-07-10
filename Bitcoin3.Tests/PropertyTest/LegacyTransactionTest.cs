@@ -1,11 +1,11 @@
-using NBitcoin.Tests.Generators;
+using Bitcoin3.Tests.Generators;
 using Xunit;
 using FsCheck;
 using FsCheck.Xunit;
 using System;
-using NBitcoin.Crypto;
+using Bitcoin3.Crypto;
 
-namespace NBitcoin.Tests.PropertyTest
+namespace Bitcoin3.Tests.PropertyTest
 {
 	// Test for non-segwit tx.
 	public class LegacyTransactionTest

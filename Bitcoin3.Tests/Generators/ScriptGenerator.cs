@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
 using FsCheck;
-using NBitcoin;
-using static NBitcoin.Tests.Generators.CryptoGenerator;
+using Bitcoin3;
+using static Bitcoin3.Tests.Generators.CryptoGenerator;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class ScriptGenerator
 	{
