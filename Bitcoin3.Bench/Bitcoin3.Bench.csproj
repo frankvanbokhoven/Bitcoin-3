@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -13,6 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  		<ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
+  		<ProjectReference Include="..\Bitcoin3\Bitcoin3.csproj" />
   </ItemGroup>
 </Project>

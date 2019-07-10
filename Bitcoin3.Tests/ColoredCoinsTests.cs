@@ -1,5 +1,5 @@
-﻿using NBitcoin.DataEncoders;
-using NBitcoin.OpenAsset;
+﻿using Bitcoin3.DataEncoders;
+using Bitcoin3.OpenAsset;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	//https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
 	public class ColoredCoinsTests

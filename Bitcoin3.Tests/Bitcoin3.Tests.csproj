@@ -22,9 +22,9 @@
 		<PackageReference Include="FsCheck" Version="2.13.0" />
 		<PackageReference Include="FsCheck.Xunit" Version="2.13.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
-		<ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
-		<ProjectReference Include="..\NBitcoin.Altcoins\NBitcoin.Altcoins.csproj" />
-		<ProjectReference Include="..\NBitcoin.TestFramework\NBitcoin.TestFramework.csproj" />
+		<ProjectReference Include="..\Bitcoin3\Bitcoin3.csproj" />
+		<ProjectReference Include="..\Bitcoin3.Altcoins\Bitcoin3.Altcoins.csproj" />
+		<ProjectReference Include="..\Bitcoin3.TestFramework\Bitcoin3.TestFramework.csproj" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.3.0" />
 		<PackageReference Include="xunit" Version="2.4.0" />
 		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">

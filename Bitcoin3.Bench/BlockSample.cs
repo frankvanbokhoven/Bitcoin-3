@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
-namespace NBitcoin.Bench
+namespace Bitcoin3.Bench
 {
 	public class BlockSample
 	{

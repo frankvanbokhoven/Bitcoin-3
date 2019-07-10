@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xunit;
-using NBitcoin.Crypto;
+using Bitcoin3.Crypto;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class GolombRiceFilterTest
 	{

@@ -1,5 +1,5 @@
-﻿using NBitcoin.BouncyCastle.Math;
-using NBitcoin.Protocol;
+﻿using Bitcoin3.BouncyCastle.Math;
+using Bitcoin3.Protocol;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class ChainTests
 	{

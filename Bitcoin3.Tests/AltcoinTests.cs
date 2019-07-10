@@ -1,12 +1,12 @@
-﻿using NBitcoin.Altcoins.Elements;
-using NBitcoin.RPC;
+﻿using Bitcoin3.Altcoins.Elements;
+using Bitcoin3.RPC;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	[Trait("Altcoins", "Altcoins")]
 	public class AltcoinTests
@@ -15,7 +15,7 @@ namespace NBitcoin.Tests
 		public void NoCrashQuickTest()
 		{
 			HashSet<string> coins = new HashSet<string>();
-			foreach (var network in NBitcoin.Altcoins.AltNetworkSets.GetAll().ToList())
+			foreach (var network in Bitcoin3.Altcoins.AltNetworkSets.GetAll().ToList())
 			{
 				if (network == Altcoins.AltNetworkSets.Liquid) // No testnet
 					continue;
