@@ -6,9 +6,9 @@
 		<Description>The C# Bitcoin Library</Description>
 		<PackageIconUrl>https://aois.blob.core.windows.net/public/Bitcoin.png</PackageIconUrl>
 		<PackageTags>bitcoin</PackageTags>
-		<PackageProjectUrl>https://github.com/MetacoSA/Bitcoin3</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/frankvanbokhoven/Bitcoin3</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<RepositoryUrl>https://github.com/MetacoSA/Bitcoin3</RepositoryUrl>
+		<RepositoryUrl>https://github.com/frankvanbokhoven/Bitcoin3</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 	<PropertyGroup>

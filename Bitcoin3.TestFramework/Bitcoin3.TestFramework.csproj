@@ -8,7 +8,7 @@
 		<AssemblyName>Bitcoin3.TestFramework</AssemblyName>
 		<PackageId>Bitcoin3.TestFramework</PackageId>
     <PackageTags>bitcoin,altcoins,bcash,bgold,bitcore,dash,dogecoin,dystem,feathercoin,groestlcoin,litecoin,monacoin,polis,ufo,viacoin,zclassic,liquid</PackageTags>
-    <PackageProjectUrl>https://github.com/MetacoSA/Bitcoin3</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/frankvanbokhoven/Bitcoin3</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
 		<PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>

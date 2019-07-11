@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<Company>Metaco SA</Company>
-		<Copyright>Copyright © Metaco SA 2017</Copyright>
+		<Company>Yggdra</Company>
+		<Copyright>Copyright © Yggdra 2019</Copyright>
 		<Description>The C# Bitcoin Library</Description>
 		<PackageIconUrl>https://aois.blob.core.windows.net/public/Bitcoin.png</PackageIconUrl>
 		<PackageId>Bitcoin3.Altcoins</PackageId>
 		<PackageTags>bitcoin,altcoins,bcash,bgold,bitcore,dash,dogecoin,dystem,feathercoin,groestlcoin,litecoin,monacoin,polis,ufo,viacoin,zclassic,liquid</PackageTags>
-		<PackageProjectUrl>https://github.com/MetacoSA/Bitcoin3</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/frankvanbokhoven/Bitcoin3</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>

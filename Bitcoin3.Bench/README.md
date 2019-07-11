@@ -9,4 +9,4 @@ dotnet run -c Release -- --runtimes netcoreapp2.1 --filter *GolombRiceFilters* -
 
 Where `GolombRiceFilters` is the name of the benchmark class you are insterested in.
 
-For generating flamegraph on linux, see [this comment](https://github.com/MetacoSA/Bitcoin3/pull/656#issuecomment-462927805).
+For generating flamegraph on linux, see [this comment](https://github.com/frankvanbokhoven/Bitcoin3/pull/656#issuecomment-462927805).

@@ -66,7 +66,7 @@ namespace Bitcoin3
 	{
 		/// <summary>
 		/// Test vector in the bip174 specify to use a signer which follows RFC 6979.
-		/// So we must sign without [LowR value assured way](https://github.com/MetacoSA/Bitcoin3/pull/510)
+		/// So we must sign without [LowR value assured way](https://github.com/frankvanbokhoven/Bitcoin3/pull/510)
 		/// This should be turned false only in the test.
 		/// ref: https://github.com/bitcoin/bitcoin/pull/13666
 		/// </summary>

@@ -67,4 +67,4 @@ You can also manually execute any test with Visual Studio.
 
 Note that the tests with the trait `Altcoins=Altcoins` are only doing some sanity check. You might want to run additional tests.
 
-You can take a look at [this commit as an example](https://github.com/MetacoSA/Bitcoin3/commit/e075d1549ddd356f112cb3322c240490382c757e).
+You can take a look at [this commit as an example](https://github.com/frankvanbokhoven/Bitcoin3/commit/e075d1549ddd356f112cb3322c240490382c757e).

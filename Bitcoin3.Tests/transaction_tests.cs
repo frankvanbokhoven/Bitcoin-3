@@ -367,7 +367,7 @@ namespace Bitcoin3.Tests
 
 		[Fact]
 		[Trait("UnitTest", "UnitTest")]
-		// https://github.com/MetacoSA/Bitcoin3/issues/480#issuecomment-412654772
+		// https://github.com/frankvanbokhoven/Bitcoin3/issues/480#issuecomment-412654772
 		public void DoNotGenerateTransactionWithNegativeFees()
 		{
 			var k = new Key();
