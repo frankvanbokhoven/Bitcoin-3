@@ -2103,7 +2103,7 @@ namespace Bitcoin3
 		}
 
 		private static readonly uint MAX_BLOCK_SIZE = 1000000;
-		private static readonly ulong MAX_MONEY = 21000000ul * Money.COIN;
+		private static readonly ulong MAX_MONEY = 750000000ul * Money.COIN;// 1 coin for every human
 
 		/// <summary>
 		/// Context free transaction check
