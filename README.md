@@ -2,19 +2,17 @@
 The 3rd inclination of Bitcoin
 
 
-Bitcoin-3 (BTC3) is the most complete Bitcoin library for the .NET platform. It implements all most relevant Bitcoin Improvement Proposals (BIPs). It also provides low level access to Bitcoin primitives so you can easily build your application on top of it. 
+Bitcoin-3 (BTC3) is pure Bitcoin, but the sources are ported to the .NET platform. It implements all most relevant Bitcoin Improvement Proposals (BIPs). It also provides low level access to Bitcoin primitives so you can easily build your application on top of it. 
 
-# How to use ?
 
-In .NET Core:
-```bash
-dotnet add package Bitcoin-3
-```
-If using legacy .NET Framework in Visual Studio
-```bash
-Install-Package Bitcoin-3
-```
-You can also just use the `Manage NuGet Package` window on your project in Visual Studio.
+*******************************
+7 july 2019: Sources optimized for VS2019 / framework 4.7.2
+*******************************
+22 june 2019: Max number of coins set to 7.500.000.000 (one for every human on Earth)
+*******************************
+21 june 2019: No halfing anymore in this inclination of Bitcoin!
+*******************************
+22 december 2018: Start porting Bitcoin sources to .net
 
 The packages support:
 
