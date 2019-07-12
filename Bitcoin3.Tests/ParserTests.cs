@@ -1,7 +1,7 @@
-using NBitcoin.Scripting.Parser;
+using Bitcoin3.Scripting.Parser;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	/// <summary>
 	/// Super basic parser just for checking sanity of parser combinator

@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using FsCheck;
 using FsCheck.Xunit;
-using NBitcoin.Crypto;
-using NBitcoin.Tests.Generators;
+using Bitcoin3.Crypto;
+using Bitcoin3.Tests.Generators;
 using Xunit;
 
-namespace NBitcoin.Tests.PropertyTest
+namespace Bitcoin3.Tests.PropertyTest
 {
 	public class SegwitTransactionTest
 	{

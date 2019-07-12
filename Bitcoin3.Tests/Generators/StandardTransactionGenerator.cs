@@ -1,6 +1,6 @@
-using NBitcoin.Policy;
+using Bitcoin3.Policy;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class StandardTransactionGenerator
 	{

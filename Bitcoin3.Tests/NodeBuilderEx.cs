@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class NodeBuilderEx
 	{

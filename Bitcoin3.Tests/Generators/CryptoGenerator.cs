@@ -1,12 +1,12 @@
 using System;
-using NBitcoin;
+using Bitcoin3;
 using FsCheck;
 using System.Collections.Generic;
 using Microsoft.FSharp.Collections;
 using System.Linq;
-using NBitcoin.Crypto;
+using Bitcoin3.Crypto;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class CryptoGenerator
 	{
@@ -91,7 +91,7 @@ namespace NBitcoin.Tests.Generators
 		public static Gen<KeyPath> KeyPath() =>
 			from raw in Gen.NonEmptyListOf(PrimitiveGenerator.RandomBytes(4))
 			let flattenBytes = raw.ToList().Aggregate((a, b) => a.Concat(b))
-			select NBitcoin.KeyPath.FromBytes(flattenBytes);
+			select Bitcoin3.KeyPath.FromBytes(flattenBytes);
 
 		public static Gen<ExtPubKey> ExtPubKey() => ExtKey().Select(ek => ek.Neuter());
 	}

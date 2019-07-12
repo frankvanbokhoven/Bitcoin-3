@@ -2082,7 +2082,7 @@ namespace Bitcoin3
 			networkType = NetworkType.Mainnet;
 			MaxP2PVersion = BITCOIN_MAX_P2P_VERSION;
 			consensus.CoinbaseMaturity = 100;
-			consensus.SubsidyHalvingInterval = 210000;
+			consensus.SubsidyHalvingInterval = 7500000;//interval for the number of humans on Earth 11/7/2019
 			consensus.MajorityEnforceBlockUpgrade = 750;
 			consensus.MajorityRejectBlockOutdated = 950;
 			consensus.MajorityWindow = 1000;
@@ -2163,7 +2163,7 @@ namespace Bitcoin3
 			_TestNet.networkType = NetworkType.Testnet;
 			networkType = NetworkType.Testnet;
 			MaxP2PVersion = BITCOIN_MAX_P2P_VERSION;
-			consensus.SubsidyHalvingInterval = 210000;
+			consensus.SubsidyHalvingInterval = 7500000;//interval for the number of humans on Earth 11/7/2019
 			consensus.MajorityEnforceBlockUpgrade = 51;
 			consensus.MajorityRejectBlockOutdated = 75;
 			consensus.MajorityWindow = 100;
@@ -2774,6 +2774,11 @@ namespace Bitcoin3
 			}
 		}
 
+		/// <summary>
+		/// This function determines the reward the miners receive for their work
+		/// </summary>
+		/// <param name="nHeight"></param>
+		/// <returns></returns>
 		public Money GetReward(int nHeight)
 		{
 			long nSubsidy = new Money(50 * Money.COIN);

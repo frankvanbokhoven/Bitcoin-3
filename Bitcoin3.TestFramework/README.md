@@ -1,4 +1,4 @@
-# NBitcoin.TestFramework
+# Bitcoin3.TestFramework
 A test framework for easily create bitcoind instances in integration tests.
 
 Example:
@@ -17,10 +17,10 @@ using(var builder = NodeBuilder.Create())
 }
 ```
 
-Available on [Nuget](https://www.nuget.org/packages/NBitcoin.TestFramework/).
+Available on [Nuget](https://www.nuget.org/packages/Bitcoin3.TestFramework/).
 
 ```
-Install-Package NBitcoin.TestFramework
+Install-Package Bitcoin3.TestFramework
 ```
 
 First run might take times as Bitcoin Core is downloaded automatically.

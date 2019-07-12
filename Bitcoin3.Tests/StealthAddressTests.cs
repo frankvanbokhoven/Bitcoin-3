@@ -1,7 +1,7 @@
-﻿using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
-using NBitcoin.Stealth;
-using NBitcoin.BouncyCastle.Math;
+﻿using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.Stealth;
+using Bitcoin3.BouncyCastle.Math;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	//https://en.bitcoin.it/wiki/Sx/Stealth
 	public class StealthAddressTests

@@ -4,7 +4,7 @@ using System.Linq;
 using FsCheck;
 using Xunit;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public static class Utils
 	{

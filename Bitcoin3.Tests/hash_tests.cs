@@ -1,16 +1,16 @@
-﻿using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
+﻿using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NBitcoin.Altcoins.HashX11;
+using Bitcoin3.Altcoins.HashX11;
 using Xunit;
 using System.IO;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class hash_tests
 	{

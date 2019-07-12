@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
     public class sample_tests
     {

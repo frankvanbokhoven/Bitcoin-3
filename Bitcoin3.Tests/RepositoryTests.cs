@@ -1,13 +1,13 @@
 ﻿#if !NOFILEIO
-using NBitcoin.BitcoinCore;
-using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
-using NBitcoin.OpenAsset;
-using NBitcoin.Protocol;
-using NBitcoin.Protocol.Behaviors;
-using NBitcoin.RPC;
-using NBitcoin.SPV;
-using NBitcoin.Stealth;
+using Bitcoin3.BitcoinCore;
+using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.OpenAsset;
+using Bitcoin3.Protocol;
+using Bitcoin3.Protocol.Behaviors;
+using Bitcoin3.RPC;
+using Bitcoin3.SPV;
+using Bitcoin3.Stealth;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -23,7 +23,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class RepositoryTests
 	{

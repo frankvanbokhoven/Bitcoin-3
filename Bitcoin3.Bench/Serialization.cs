@@ -1,14 +1,14 @@
 using System;
-using NBitcoin;
+using Bitcoin3;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.IO;
-using NBitcoin.Bench;
+using Bitcoin3.Bench;
 
-namespace NBitcoin.Bench
+namespace Bitcoin3.Bench
 {
 	[RPlotExporter, RankColumn]
 	public class Serialization

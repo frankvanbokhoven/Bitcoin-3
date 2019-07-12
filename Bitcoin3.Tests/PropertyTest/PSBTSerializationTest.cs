@@ -1,15 +1,15 @@
 using System.IO;
 using FsCheck;
 using FsCheck.Xunit;
-using NBitcoin.Tests.Generators;
-using NBitcoin;
+using Bitcoin3.Tests.Generators;
+using Bitcoin3;
 using Xunit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static NBitcoin.Tests.Comparer;
+using static Bitcoin3.Tests.Comparer;
 
-namespace NBitcoin.Tests.PropertyTest
+namespace Bitcoin3.Tests.PropertyTest
 {
 	public class PSBTTest
 	{

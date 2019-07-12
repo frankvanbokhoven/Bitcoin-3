@@ -1,4 +1,4 @@
-﻿using NBitcoin.DataEncoders;
+﻿using Bitcoin3.DataEncoders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	//https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki
 	public class BIP38Tests

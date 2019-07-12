@@ -1,11 +1,11 @@
-﻿using NBitcoin.RPC;
+﻿using Bitcoin3.RPC;
 using System;
 using System.Linq;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
-	//Require a rpc server on test network running on default port with -rest -rpcuser=NBitcoin -rpcpassword=NBitcoinPassword
+	//Require a rpc server on test network running on default port with -rest -rpcuser=Bitcoin3 -rpcpassword=Bitcoin3Password
 	//For me : 
 	//"bitcoin-qt.exe" -testnet -server -rest 
 	[Trait("RestClient", "RestClient")]

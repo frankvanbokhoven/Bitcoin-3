@@ -4,8 +4,8 @@
       "src": [
         {
           "files": [
-            "NBitcoin/**.csproj",
-            "NBitcoin.Altcoins/**.csproj"
+            "Bitcoin3/**.csproj",
+            "Bitcoin3.Altcoins/**.csproj"
           ],
 		  "cwd": ".."
         }

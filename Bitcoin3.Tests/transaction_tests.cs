@@ -1,12 +1,12 @@
-﻿using NBitcoin.Altcoins.Elements;
-using NBitcoin.BitcoinCore;
-using NBitcoin.BouncyCastle.Math;
-using NBitcoin.Crypto;
-using NBitcoin.DataEncoders;
-using NBitcoin.OpenAsset;
-using NBitcoin.Policy;
-using NBitcoin.Protocol;
-using NBitcoin.Stealth;
+﻿using Bitcoin3.Altcoins.Elements;
+using Bitcoin3.BitcoinCore;
+using Bitcoin3.BouncyCastle.Math;
+using Bitcoin3.Crypto;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.OpenAsset;
+using Bitcoin3.Policy;
+using Bitcoin3.Protocol;
+using Bitcoin3.Stealth;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class transaction_tests
 	{
@@ -367,7 +367,7 @@ namespace NBitcoin.Tests
 
 		[Fact]
 		[Trait("UnitTest", "UnitTest")]
-		// https://github.com/MetacoSA/NBitcoin/issues/480#issuecomment-412654772
+		// https://github.com/frankvanbokhoven/Bitcoin3/issues/480#issuecomment-412654772
 		public void DoNotGenerateTransactionWithNegativeFees()
 		{
 			var k = new Key();
@@ -404,7 +404,7 @@ namespace NBitcoin.Tests
 
 		[Fact]
 		[Trait("UnitTest", "UnitTest")]
-		//https://github.com/NicolasDorier/NBitcoin/issues/34
+		//https://github.com/NicolasDorier/Bitcoin3/issues/34
 		public void CanBuildAnyoneCanPayTransaction()
 		{
 			//Carla is buying from Alice. Bob is acting as a mediator between Alice and Carla.
@@ -1933,8 +1933,8 @@ namespace NBitcoin.Tests
 		[Trait("UnitTest", "UnitTest")]
 		public void CanParseLTubLitecoin()
 		{
-			new BitcoinExtKey("Ltpv71G8qDifUiNesyXJM9i5RzRB5HHFWfjseAX7mXY6vim2BHMBHgZJi9poW2J5FveLFg4PnPXf6y2VLtYoTDxJAhbVRRpo3GeKKx1wveysYnw", NBitcoin.Altcoins.Litecoin.Instance.Mainnet);
-			new BitcoinExtPubKey("Ltub2SSUS19CirucVaJxxH11bYDCEmze824yTDJCzRg5fDNN3oBWussWgRA7Zyiya98dAErcvDsw7rAuuZuZug3Ve6iT5uVkwPAKwQphBiQdjNd", NBitcoin.Altcoins.Litecoin.Instance.Mainnet);
+			new BitcoinExtKey("Ltpv71G8qDifUiNesyXJM9i5RzRB5HHFWfjseAX7mXY6vim2BHMBHgZJi9poW2J5FveLFg4PnPXf6y2VLtYoTDxJAhbVRRpo3GeKKx1wveysYnw", Bitcoin3.Altcoins.Litecoin.Instance.Mainnet);
+			new BitcoinExtPubKey("Ltub2SSUS19CirucVaJxxH11bYDCEmze824yTDJCzRg5fDNN3oBWussWgRA7Zyiya98dAErcvDsw7rAuuZuZug3Ve6iT5uVkwPAKwQphBiQdjNd", Bitcoin3.Altcoins.Litecoin.Instance.Mainnet);
 		}
 
 		[Fact]

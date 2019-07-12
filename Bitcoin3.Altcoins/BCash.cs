@@ -287,8 +287,8 @@ namespace Bitcoin3.Altcoins
 			var builder = new NetworkBuilder();
 			return builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 210000,
-				MajorityEnforceBlockUpgrade = 750,
+				SubsidyHalvingInterval = 7500000,//interval for the number of humans on Earth 11/7/2019
+			MajorityEnforceBlockUpgrade = 750,
 				MajorityRejectBlockOutdated = 950,
 				MajorityWindow = 1000,
 				BIP34Hash = new uint256("000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"),
@@ -339,8 +339,8 @@ namespace Bitcoin3.Altcoins
 			var builder = new NetworkBuilder();
 			builder.SetConsensus(new Consensus()
 			{
-				SubsidyHalvingInterval = 210000,
-				MajorityEnforceBlockUpgrade = 51,
+				SubsidyHalvingInterval = 7500000,//interval for the number of humans on Earth 11/7/2019
+                MajorityEnforceBlockUpgrade = 51,
 				MajorityRejectBlockOutdated = 75,
 				MajorityWindow = 2016,
 				BIP34Hash = new uint256("0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8"),

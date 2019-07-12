@@ -1,10 +1,10 @@
 using System;
 using FsCheck;
 using FsCheck.Xunit;
-using NBitcoin.Tests.Generators;
+using Bitcoin3.Tests.Generators;
 using Xunit;
 
-namespace NBitcoin.Tests.PropertyTest
+namespace Bitcoin3.Tests.PropertyTest
 {
 	public class AddressTest
 	{

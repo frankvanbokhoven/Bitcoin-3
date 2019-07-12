@@ -1,4 +1,4 @@
-﻿using NBitcoin.Crypto;
+﻿using Bitcoin3.Crypto;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	class AssertEx
 	{

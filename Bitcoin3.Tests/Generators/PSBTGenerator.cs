@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FsCheck;
-using NBitcoin.Crypto;
+using Bitcoin3.Crypto;
 using Xunit;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	using HDKeyPathKVMap = Dictionary<PubKey, Tuple<HDFingerprint, KeyPath>>;
 	using PartialSigKVMap = Dictionary<KeyId, Tuple<PubKey, ECDSASignature>>;

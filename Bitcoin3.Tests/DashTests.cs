@@ -1,13 +1,13 @@
-﻿using NBitcoin.Altcoins;
-using NBitcoin.DataEncoders;
+﻿using Bitcoin3.Altcoins;
+using Bitcoin3.DataEncoders;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	/// <summary>
 	/// Ensures all Dash Special Transaction types can be read
 	/// https://github.com/dashpay/dips/blob/master/dip-0002-special-transactions.md
-	/// Also fixes https://github.com/MetacoSA/NBitcoin/issues/607
+	/// Also fixes https://github.com/frankvanbokhoven/Bitcoin3/issues/607
 	/// </summary>
 	public class DashTests
 	{

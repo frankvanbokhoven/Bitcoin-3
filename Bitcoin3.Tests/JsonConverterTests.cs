@@ -1,5 +1,5 @@
-﻿using NBitcoin.JsonConverters;
-using NBitcoin.OpenAsset;
+﻿using Bitcoin3.JsonConverters;
+using Bitcoin3.OpenAsset;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	public class JsonConverterTests
 	{

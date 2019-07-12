@@ -1,6 +1,6 @@
 ﻿#if !NOFILEIO
-using NBitcoin.DataEncoders;
-using NBitcoin.Payment;
+using Bitcoin3.DataEncoders;
+using Bitcoin3.Payment;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,7 +13,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace NBitcoin.Tests
+namespace Bitcoin3.Tests
 {
 	//https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
 	//Their examples are broken

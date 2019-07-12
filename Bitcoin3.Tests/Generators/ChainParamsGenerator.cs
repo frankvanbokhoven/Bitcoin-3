@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using FsCheck;
-using NBitcoin;
+using Bitcoin3;
 
-namespace NBitcoin.Tests.Generators
+namespace Bitcoin3.Tests.Generators
 {
 	public class ChainParamsGenerator
 	{

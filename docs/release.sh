@@ -5,7 +5,7 @@ export VSINSTALLDIR="C:\Program Files (x86)\Microsoft Visual Studio\2017\Communi
 export VisualStudioVersion="15.0"
 
 SOURCE_DIR=$PWD
-TEMP_REPO_DIR=$PWD/../NBitcoin-gh-pages
+TEMP_REPO_DIR=$PWD/../Bitcoin3-gh-pages
 docfx ./docs/docfx.json
 
 
