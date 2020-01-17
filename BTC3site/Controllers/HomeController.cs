@@ -26,5 +26,40 @@ namespace BTC3site.Controllers
 
 			return View();
 		}
+
+		public ActionResult Mining()
+		{
+			ViewBag.Message = "Mining";
+			return View();
+
+		}
+
+		public ActionResult Roadmap()
+		{
+			ViewBag.Message = "Roadmap";
+			return View();
+
+		}
+
+		public ActionResult Security()
+		{
+			ViewBag.Message = "Security";
+			return View();
+
+		}
+
+		public ActionResult Genesis()
+		{
+			ViewBag.Message = "Genesis";
+			return View();
+
+		}
+
+		public ActionResult BlockExplorer()
+		{
+			ViewBag.Message = "BlockExplorer";
+			return View();
+
+		}
 	}
 }
